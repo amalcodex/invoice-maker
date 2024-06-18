@@ -30,7 +30,7 @@ class InvoiceItem extends React.Component {
             {itemTable}
           </tbody>
         </Table>
-        <Button className="fw-bold" onClick={this.props.onRowAdd}>Add Item</Button>
+        <Button variant="outline-primary" className="fw-bold" onClick={this.props.onRowAdd}>Add Item</Button>
       </div>
     );
 
@@ -92,7 +92,7 @@ class ItemRow extends React.Component {
           }}/>
         </td>
         <td className="text-center" style={{minWidth: '50px'}}>
-          <BiTrash onClick={this.onDelEvent.bind(this)} style={{height: '33px', width: '33px', padding: '7.5px'}} className="text-white mt-1 btn btn-danger"/>
+          <BiTrash onClick={this.onDelEvent.bind(this)} style={{height: '33px', width: '33px', padding: '7.5px'}} className="text-red mt-1 btn btn-outline-danger"/>
         </td>
       </tr>
     );
